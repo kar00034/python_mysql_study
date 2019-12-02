@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 
 
-def read_db_config(filename = 'Config.ini',section = 'mysql'):
+def read_db_config(filename='Config.ini', section='mysql'):
     parser = ConfigParser()
     parser.read(filename)
 
@@ -11,5 +11,5 @@ def read_db_config(filename = 'Config.ini',section = 'mysql'):
         for item in items:
             db[item[0]] = item[1]
     else:
-        raise Exception('{} not found in {} file'.format(section,filename))
+        raise Exception('{} not found in {} file'.format(section, filename))
     return db
