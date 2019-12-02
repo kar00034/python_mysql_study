@@ -15,7 +15,7 @@ class ExplicitlyConnectionPool(object):
     def get_instance(cls):
         if cls.INSTANCE is None:
             cls.INSTANCE = ExplicitlyConnectionPool()
-            return cls.INSTANCE
+        return cls.INSTANCE
 
     def get_connection(self):
         return self.__cnxPool.get_connection()

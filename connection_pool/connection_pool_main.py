@@ -33,5 +33,5 @@ if __name__ == "__main__":
     explicitly_connection_pool()
     implicitly_connection_pool()
 
-    # explicitly_connection_pool()
-    # implicitly_connection_pool()
+    explicitly_connection_pool()
+    implicitly_connection_pool()
