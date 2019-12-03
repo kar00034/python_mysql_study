@@ -19,4 +19,3 @@ if __name__ == "__main__":
     read_ddl_file_test()
     db = DbInit()
     db.service()
-    # create_trigger()
