@@ -12,14 +12,26 @@ TABLES = {'product': (
     'sale': (
         """
     CREATE TABLE sale(
-    no INT(11) auto_increments,
+    no INT(11) auto_increment,
     code CHAR(4) NOT NULL,
     price INT(11) NOT NULL,
     saleCnt INT(11) NOT NULL,
     marginRate INT(11) NOT NULL,
     primary key(no),
     FOREIGN KEY(code) REFERENCES product(code))
-    """)
+    """),
+    'sale_detail': (
+        """
+    CREATE TABLE sale_detail(
+    no int not null,
+    sale_price int not null,
+    addTax int not null,
+    supply_price int not null,
+    marginPrice int not null,
+    foreign key (no) references sale (no)
+    on delete cascade)
+    """
+)
 }
 
 
