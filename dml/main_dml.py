@@ -49,6 +49,7 @@ if __name__ == "__main__":
     # query_with_fetchall(sql_sel)
     select_sql = "select code, name from product where like 'C__'"
     res = query_with_fetchall(select_sql)
+
     columns_list = ['code', 'name']
     df = pd.DataFrame(res, columns=columns_list)
     print(df)
