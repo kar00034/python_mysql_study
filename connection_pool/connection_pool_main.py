@@ -1,6 +1,6 @@
 import inspect
 
-from connection_pool.connection_fool_study import DatabaseConnectionPool
+from connection_pool.connection_pool_study import DatabaseConnectionPool
 from connection_pool.connection_pool_study02 import ExplicitlyConnectionPool, get_implicitly_connection
 
 
